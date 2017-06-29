@@ -104,7 +104,9 @@ To train the model, I used the following hyperparameters:
 ### Hyperparameters
 
 EPOCHS = 30
+
 BATCH_SIZE = 128
+
 learn_rate = 0.005
 
 Monitor accuracy improvement and use early stopping to avoid overfitting
@@ -211,7 +213,7 @@ The code for making predictions on my final model is located in the 19th cell of
 
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
-####1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
+#### 1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
 
 The neural network seems to use different contrast lines and shapes, some form of color thresholding based on the intensity of different pixels.
 
