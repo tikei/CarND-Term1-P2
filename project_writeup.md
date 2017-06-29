@@ -29,8 +29,6 @@ The goals / steps of this project are the following:
 [image12]: ./new_examples/cropped/class_17.png "Traffic Sign 8"
 [image13]: ./new_examples/cropped/class_18.png "Traffic Sign 9"
 [image14]: ./new_examples/cropped/class_18_1.png "Traffic Sign 10"
-[image15]: ./new_examples/cropped/class_25.png "Traffic Sign 11"
-[image16]: ./new_examples/cropped/class_28.png "Traffic Sign 12"
 
 ## Rubric Points
 #### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
