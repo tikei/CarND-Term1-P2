@@ -29,6 +29,8 @@ The goals / steps of this project are the following:
 [image12]: ./new_examples/cropped/class_17.png "Traffic Sign 8"
 [image13]: ./new_examples/cropped/class_18.png "Traffic Sign 9"
 [image14]: ./new_examples/cropped/class_18_1.png "Traffic Sign 10"
+[image15]: ./new_examples/cropped/class_25.png "Traffic Sign 11"
+[image16]: ./new_examples/cropped/class_28_1.png "Traffic Sign 12"
 
 ## Rubric Points
 #### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -147,7 +149,9 @@ I then added regularization, which helped somewhat with the overfitting. I also 
 
 * Which parameters were tuned? How were they adjusted and why?
 
-I initially used a lower learning rate, however, I then introduced a more aggressive rate and early stopping with a learning rate schedule (halving the learing rate, when the accuracy does not improve over the last n epochs)  
+I initially used a lower learning rate, however, I then introduced a more aggressive rate and early stopping with a learning rate schedule (halving the learing rate, when the accuracy does not improve over the last n epochs) .
+
+The number of epochs was increased from originally 20 to 30 epochs. However early stopping is achieved at around 15 epochs. 
 
 Adjusting the regularization rate did not significantly improve the results.
 
@@ -158,7 +162,7 @@ Dropout and regularization can help, as the network has large number of paramete
 
 ![alt text][image4]
 
-Nevertheless, the final validation and test accuracies around 95% provides a good basis for further importvement.
+Nevertheless, the final validation and test accuracies around 95% provides a good basis for further improvement.
 
 
 ### Test a Model on New Images
@@ -203,7 +207,7 @@ Here are the results of the predictions:
 
 
 
-The model was able to correctly guess 6 of the 12 traffic signs, which gives an accuracy of 50%. This compares unfavorably to the accuracy on the test set of 94.5% Part of the problem could be the training on an unbalanced training set, as well as the image quality (resolution, graffity,  rotations and stretches). This could be mitigated by artificially extending the training set. 
+The model was able to correctly guess 6 of the 12 traffic signs, which gives an accuracy of 50%. This compares unfavorably to the accuracy on the test set of 94.5% Part of the problem could be the training on an unbalanced training set, as well as the image quality (resolution, graffity,  rotations and stretches). This could be mitigated by (artificially) extending the training set. 
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
